@@ -1,0 +1,95 @@
+.layout
+    width: 100%
+    height: 100vh
+    background: #f5f7f9;
+    position: relative;
+    overflow: hidden;
+
+.layout-header-bar
+    width: 100%
+    padding: 0 20px;
+    background: #fff;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    position: fixed
+    top: 0
+    padding-left: 225px
+    z-index: 1000
+
+.layout-header-collapsed
+    padding-left 78px
+
+.layout-logo-left
+    width: 90%;
+    height: 30px;
+    background: #5b6270;
+    border-radius: 3px;
+    margin: 15px auto;
+.layout-sider
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0
+    z-index: 2000
+    overflow hidden
+    background: #001529
+.layout-content
+    width: calc(100% - 225px)
+    height: calc(100vh - 64px)
+    top: 64px
+    left 225px
+    padding: 20px;
+    min-height: 260px;
+    position fixed
+    overflow auto
+    overflow-y: scroll
+.layout-content-collapsed
+    left 78px
+    width: calc(100% - 78px)
+
+.menu-icon
+    transition: all .3s;
+.rotate-icon
+    transform: rotate(-90deg);
+.menu-item span
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: bottom;
+    transition: width .2s ease .2s;
+.menu-item i
+    transform: translateX(0px);
+    transition: font-size .2s ease, transform .2s ease;
+    vertical-align: middle;
+    font-size: 16px;
+.collapsed-menu span
+    width: 0px;
+    transition: width .2s ease;
+.collapsed-menu i
+    transform: translateX(5px);
+    transition: font-size .2s ease .2s, transform .2s ease .2s;
+    vertical-align: middle;
+    font-size: 22px;
+
+.logo-con
+    height: 90px;
+    //color: #fff;
+    margin-top : 1s5px;
+    margin-bottom:8px
+
+.user-name
+    float: right;
+    margin-right: 10px;
+    font-weight: 500;
+
+.navbar-right
+    float: right!important;
+    color: #93CBF9!important;
+    height: auto;
+    line-height: 64px;
+    padding-right: 20px;
+    cursor: pointer;
+.navbar-right p
+    padding: 0 18px;
+    line-height: 30px;
+    cursor: default;
